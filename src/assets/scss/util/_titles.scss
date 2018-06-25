@@ -51,7 +51,7 @@
   font-style: italic;
 }
 
-.featured-news {
+.featured-news, .three-news-vertical-section {
   @include breakpoint(medium only) {
     .title-1 {
       margin-bottom: rem-calc(20);
