@@ -1,0 +1,41 @@
+.main-page-slider {
+  .orbit-container {
+    height: rem-calc(250);
+    margin-bottom: rem-calc(20);
+  }
+
+  @include breakpoint(medium) {
+    .orbit-container {
+      margin-bottom: 0;
+      height: rem-calc(400px) !important;
+    }
+  }
+}
+
+.orbit-caption {
+  font-weight: 700;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(20);
+    line-height: 1.2;
+  }
+}
+
+.slider-tag {
+  background-color: $alert-color;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $white;
+  top: rem-calc(20);
+  font-size: rem-calc(12);
+  z-index: 9;
+  padding: rem-calc(6);
+}
+
+.orbit-slide {
+  &:hover {
+    .orbit-figure {
+      color: $primary-color;
+    }
+  }
+}

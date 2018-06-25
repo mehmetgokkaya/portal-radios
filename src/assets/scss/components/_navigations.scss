@@ -1,0 +1,22 @@
+.main-menu {
+  margin-top: rem-calc(20);
+  border-top: 1px dashed $light-gray;
+  padding-bottom: rem-calc(10);
+  padding-top: rem-calc(10);
+
+  .menu {
+    a {
+      text-transform: uppercase;
+      font-size: rem-calc(14);
+      font-weight: 700;
+      &:hover {
+        color: $success-color;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    border-top: 2px dashed $light-gray;
+  }
+}
+

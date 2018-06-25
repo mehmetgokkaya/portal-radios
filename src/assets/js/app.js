@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+import bgCovers from './lib/bgCovers';
 
 window.$ = $;
 
@@ -10,3 +11,4 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+bgCovers();

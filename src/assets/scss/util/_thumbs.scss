@@ -1,0 +1,29 @@
+.thumb-1 {
+  width: rem-calc(100);
+  height: rem-calc(100);
+}
+
+.card-blog {
+  a.display-block {
+    height: rem-calc(180);
+    border-bottom: 2px solid $alert-color;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  span {
+    padding: rem-calc(2 5);
+    background-color: $alert-color;
+    color: $white;
+    z-index: 9;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(medium only) {
+    a.display-block {
+      height: rem-calc(100);
+    }
+  }
+}

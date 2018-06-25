@@ -1,0 +1,10 @@
+.img-button {
+  padding: rem-calc(0px 5px);
+}
+
+.h-invert {
+  &.button {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
