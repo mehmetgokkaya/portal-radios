@@ -13,6 +13,7 @@
     text-transform: uppercase;
   }
 
+
   @include breakpoint(medium) {
     h4 {
       font-size: rem-calc(14);
