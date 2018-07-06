@@ -1,0 +1,21 @@
+#footer {
+  background-color: #333;
+  padding: rem-calc(20 0);
+  border-top: 4px solid $dark-gray;
+
+  h4, a {
+    color: $medium-gray;
+    text-transform: uppercase;
+  }
+
+  a {
+    font-size: rem-calc(12);
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(medium) {
+    h4 {
+      font-size: rem-calc(14);
+    }
+  }
+}
