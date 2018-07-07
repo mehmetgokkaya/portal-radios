@@ -45,6 +45,36 @@
   }
 }
 
+.single-title {
+  font-weight: 800;
+
+  @include breakpoint(medium) {
+    line-height: 1.2;
+    font-size: rem-calc(32);
+  }
+}
+
+.single-exception {
+  font-size: rem-calc(13);
+  color: $dark-gray;
+}
+
+.single-date {
+  font-size: rem-calc(12);
+  color: $dark-gray;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.separator {
+  display: inline-block;
+  width: 100%;
+  height: rem-calc(1);
+  background-color: $light-gray;
+  box-sizing: content-box;
+  border-bottom: 1px solid white;
+}
+
 .except {
   font-size: rem-calc(13);
   color: $medium-gray;

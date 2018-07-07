@@ -1,0 +1,13 @@
+.single-content {
+  p {
+    color: lighten($black, 20%);
+  }
+}
+
+.comments-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $dark-gray;
+  font-size: rem-calc(16);
+  border-bottom: 1px solid $light-gray;
+}
