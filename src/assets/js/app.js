@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 import bgCovers from './lib/bgCovers';
+import menuOffcanvas from './lib/menuOffcanvas';
 
 window.$ = $;
 
@@ -12,3 +13,4 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 bgCovers();
+menuOffcanvas();

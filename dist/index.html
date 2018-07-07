@@ -1,686 +1,748 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patamuté FM/Difusora AM</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/app.css">
-  </head>
-  <body>
-    <header class="header width-100">
-        <div class="position-fixed-top">
-            <div class="grid-x grid-padding-x top-bar">
-                <div class="cell small-6 text-left show-for-large">
-                    <ul class="dropdown menu top-menu" data-dropdown-menu>
-                        <li>
-                            <a href="#">Programação</a>
-                            <ul class="menu theme">
-                                <li><a href="#">Patamuté FM 94.5</a></li>
-                                <li><a href="#">Difusora Rádio Cajazeiras</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Notícias</a>
-                            <ul class="menu theme">
-                                <li><a href="#">Cidades</a></li>
-                                <li><a href="#">Cajazeiras</a></li>
-                                <li><a href="#">Paraíba</a></li>
-                                <li><a href="#">Brasil</a></li>
-                                <li><a href="#">Mundo</a></li>
-                                <li><a href="#">Entretenimento</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Contato</a>
-                        </li>
-                    </ul>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0&appId=311641142285753&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header class="header width-100">
+    <div class="position-fixed-top">
+        <div class="grid-x grid-padding-x top-bar">
+            <div class="cell small-6 text-left show-for-large">
+                <ul class="dropdown menu top-menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">Programação</a>
+                        <ul class="menu theme">
+                            <li><a href="#">Patamuté FM 94.5</a></li>
+                            <li><a href="#">Difusora Rádio Cajazeiras</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Notícias</a>
+                        <ul class="menu theme">
+                            <li><a href="#">Cidades</a></li>
+                            <li><a href="#">Cajazeiras</a></li>
+                            <li><a href="#">Paraíba</a></li>
+                            <li><a href="#">Brasil</a></li>
+                            <li><a href="#">Mundo</a></li>
+                            <li><a href="#">Entretenimento</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="cell small-6 text-right show-for-large">
+                <div class="input-group margin-bottom-0 display-inline-block search-container">
+                    <input class="input-group-field float-left" placeholder="Pesquisar no site..." type="text">
+                    <div class="input-group-button float-left">
+                        <button class="button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
                 </div>
-            
-                <div class="cell small-6 text-right show-for-large">
-                    <div class="input-group margin-bottom-0 display-inline-block search-container">
-                        <input class="input-group-field float-left" placeholder="Pesquisar no site..." type="text">
-                        <div class="input-group-button float-left">
-                            <button class="button" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
+            </div>
+        
+            <div class="cell small-12 hide-for-large">
+                <a href="#" class="open-offcanvas toggle-offcanvas"></a>
+            </div>
+        </div>
+        <div class="grid-x top-bar-bottom">
+            <div class="cell small-4 bg-danger"></div>
+            <div class="cell small-2 bg-warning"></div>
+            <div class="cell small-3 bg-orange"></div>
+            <div class="cell small-2 bg-success"></div>
+            <div class="cell small-1 bg-primary"></div>
+        </div>    </div>
+
+    <div class="grid-container">
+        <div class="site-top grid-x grid-padding-x">
+            <div class="cell small-2">
+                <div class="logo-container display-inline-block">
+                    <a href="#" class="logo" title="Patamuté FM 94.5">
+                        <img src="assets/img/logo-fm.png" alt="logo patmuté fm">
+                    </a>
+                </div>
+            </div>
+
+            <div class="cell small-8">
+                <div class="ads-container width-100 text-center show-for-large">
+                    <img src="assets/img/ads700.png" alt="">
+                </div>
+
+                <div class="grid-x grid-padding-x hide-for-large">
+                    <div class="cell small-6 text-left">
+                        <div class="mobile-link display-inline-block">
+                            <a href="#" class="hollow tiny button margin-bottom-0">
+                                <i class="fas fa-play-circle"></i> Ouvir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cell small-6 text-right">
+                        <div class="mobile-link display-inline-block">
+                            <a href="#" class="hollow tiny button margin-bottom-0">
+                                <i class="fas fa-play-circle"></i> Ouvir
+                            </a>
                         </div>
                     </div>
                 </div>
-            
-                <div class="cell small-12 hide-for-large">
-                    <a href="#" class="open-offcanvas"></a>
+            </div>
+
+            <div class="cell small-2 text-right">
+                <div class="logo-container display-inline-block">
+                    <a href="#" class="logo logo-am" title="Difusora Rádio Cajazeiras">
+                        <img src="assets/img/logo-am.jpg" alt="logo difusora" width="110">
+                    </a>
                 </div>
             </div>
-            <div class="grid-x top-bar-bottom">
-                <div class="cell small-4 bg-danger"></div>
-                <div class="cell small-2 bg-warning"></div>
-                <div class="cell small-3 bg-orange"></div>
-                <div class="cell small-2 bg-success"></div>
-                <div class="cell small-1 bg-primary"></div>
+
+            <div class="cell small-12 hide-for-large margin-top-1">
+                <div class="ads-container width-100 text-center">
+                    <img src="assets/img/ads700.png" alt="">
+                </div>
+            </div>
+
+            <div class="cell small-12 main-menu">
+                <div class="grid-x grid-padding-x show-for-large">
+                    <div class="cell shrink">
+                        <a href="#" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Patamuté FM 94.5</a>
+                    </div>
+            
+                    <div class="cell auto padding-0">
+                        <ul class="menu align-center">
+                            <li><a href="#">Cidades</a></li>
+                            <li><a href="#">Cajazeiras</a></li>
+                            <li><a href="#">Paraíba</a></li>
+                            <li><a href="#">Brasil</a></li>
+                            <li><a href="#">Mundo</a></li>
+                            <li><a href="#">Entretenimento</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="cell shrink text-right">
+                        <a href="#" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Difusora Rádio</a>
+                    </div>
+                </div>
+            </div>        </div>
+    </div>
+</header>
+<div class="grid-container main-container">
+    <div class="grid-x grid-padding-x programacao-radios">
+        <!--<div class="cell small-12 section-header">-->
+            <!--<div class="grid-x">-->
+                <!--<div class="cell small-12 section-container">-->
+                    <!--<div class="grid-x">-->
+                        <!--<div class="cell auto text-left">-->
+                            <!--<h2 class="margin-0"><i class="fas fa-calendar-alt"></i> Programação</h2>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    
+        <div class="cell small-12 medium-4 margin-bottom-1">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                <li class="tabs-title is-active"><a href="#patamute"><i class="far fa-calendar"></i> <strong>Patamuté FM 94.5</strong></a></li>
+                <li class="tabs-title"><a href="#difusora"><i class="far fa-calendar"></i> <strong>Difusora Rádio</strong></a></li>
+            </ul>
+    
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                <div class="tabs-panel is-active" id="patamute">
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="tabs-panel" id="difusora">
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-object padding-bottom-1">
+                        <div class="media-object-section">
+                            <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                        </div>
+                        <div class="media-object-section programacao-block">
+                            <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                            <p>
+                                <small>
+                                    <i class="far fa-clock"></i> 5:00 |
+                                    <i class="far fa-calendar-alt"></i> SEG À SEX
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cell small-12 medium-4 text-center ads-container margin-bottom-1">
+            <span class="display-inline-block width-100 margin-bottom-1">
+                <small class="text-uppercase">Publicidade</small>
+            </span>
+    
+            <figure>
+                <a href="#">
+                    <img src="https://78027555ff7a6b146c81-f0a5e719f27438cb91b2682ec1265bfb.ssl.cf2.rackcdn.com/7f8fb562e385f23506cf585c1db890a3.jpeg"
+                         alt="ads">
+                </a>
+            </figure>
+        </div>
+    
+        <div class="cell small-12 medium-4 margin-bottom-1">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs-live">
+                <li class="tabs-title is-active"><a href="#patamute-live"><i class="fas fa-play"></i> <strong>Patamuté FM 94.5</strong></a></li>
+                <li class="tabs-title"><a href="#difusora-live"><i class="fas fa-play"></i> <strong>Difusora Rádio</strong></a></li>
+            </ul>
+    
+            <div class="tabs-content" data-tabs-content="collapsing-tabs-live">
+                <div class="tabs-panel is-active" id="patamute-live">
+                    <div class="responsive-embed widescreen">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+    
+                <div class="tabs-panel" id="difusora-live">
+                    <div class="responsive-embed widescreen">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="grid-x grid-padding-x">
+        <div class="cell small-12 section-header">
+            <div class="grid-x">
+                <div class="cell small-12 section-container">
+                    <div class="grid-x">
+                        <div class="cell auto text-left">
+                            <h2 class="margin-0"><i class="fas fa-star"></i> Destaques</h2>
+                        </div>
+                        <div class="cell auto text-right">
+                            <span><a href="#">Todos</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cell small-12 medium-6">
+            <div class="orbit width-100 main-page-slider" role="region" aria-label="Destaques do site" data-orbit>
+                <div class="orbit-wrapper">
+                    <div class="orbit-controls show-for-medium">
+                        <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Próximo</span>&#9654;&#xFE0E;</button>
+                    </div>
+                    <ul class="orbit-container">
+                        <li class="is-active orbit-slide height-100 width-100 overflow-hidden">
+                            <a href="#" class="slider-tag display-block position-absolute position-left">Resultado</a>
+            
+                            <a class="orbit-figure display-block">
+                                <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
+                                     data-bgcover="https://img.jovempan.uol.com.br/uploads/2018/06/636653879051184077w-796x576.jpg"></div>
+                                <span class="display-block orbit-caption">Sai resultado da enquete para decidir se o Dia de São Pedro é feriado em Cajazeiras; Saiba como foi!</span>
+                            </a>
+                        </li>
+                        <li class="orbit-slide height-100 width-100 overflow-hidden">
+                            <a href="#" class="slider-tag display-block position-absolute position-left">Condenação</a>
+            
+                            <a class="orbit-figure display-block">
+                                <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
+                                     data-bgcover="http://www.abrapbrasil.com.br/images/noticias/camara-aprova-projeto-que-cria-a-politica-nacional-de-biocombustiveis-5a1e8d0f90290.jpg"></div>
+                                <span class="display-block orbit-caption">Condenação Federal de ex-prefeito, visitas de Dra Paula e dúvida dos eleitores são assuntos da semana</span>
+                            </a>
+                        </li>
+                        <li class="orbit-slide height-100 width-100 overflow-hidden">
+                            <a href="#" class="slider-tag display-block position-absolute position-left">Abre mão</a>
+            
+                            <a class="orbit-figure display-block">
+                                <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
+                                     data-bgcover="http://vanhoni.com.br/wp-content/uploads/2009/10/angelovanhoni_foto_gilsoncamargo_09_10_09_campolargo_pr51.jpg"></div>
+                                <span class="display-block orbit-caption">Mariano, da dupla com Munhoz, abre mão do luxo e anda de ônibus</span>
+                            </a>
+                        </li>
+                        <li class="orbit-slide height-100 width-100 overflow-hidden">
+                            <a href="#" class="slider-tag display-block position-absolute position-left">Boa notícia</a>
+            
+                            <a class="orbit-figure display-block">
+                                <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
+                                     data-bgcover="http://s2.glbimg.com/XewABaasipIdKIQwKnkQyaqdV-uPtvPMv4_Yn9fopGpIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/09/10/artur_620.jpg"></div>
+                                <span class="display-block orbit-caption">Bruna Marquezine é tietada por brasileiros nas ruas da Rússia</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--<nav class="orbit-bullets">-->
+                    <!--<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>-->
+                    <!--<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>-->
+                    <!--<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>-->
+                    <!--<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>-->
+                <!--</nav>-->
             </div>    </div>
     
-        <div class="grid-container">
-            <div class="site-top grid-x grid-padding-x">
-                <div class="cell small-2">
-                    <div class="logo-container display-inline-block">
-                        <a href="#" class="logo" title="Patamuté FM 94.5">
-                            <img src="assets/img/logo-fm.png" alt="logo patmuté fm">
-                        </a>
+        <div class="cell small-12 medium-6 featured-news">
+            <div class="width-100">
+                <span class="tag">Trágico</span>
+                <h2 class="title-1">
+                    <a href="single.html">NA REGIÃO DE CAJAZEIRAS: Criança que lutava contra doença rara morre aos 5 anos; Mãe diz como foi últimos momentos da filha</a>
+                </h2>
+                <p class="except divider show-for-large">
+                    Jamily era que era natural da cidade de Uiraúna, se alimentava por sonda e precisa de um leite que custava em torno de R$ 1,6 mil cada lata
+                </p>
+            </div>
+    
+            <div class="width-100">
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <a href="#" class="thumb-1 display-block" data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2017/03/damisio_triunfo_-2.jpg"></a>
+                    </div>
+                    <div class="media-object-section">
+                        <span class="tag">Condenação</span>
+                        <h2 class="title-2"><a href="#">Ex-prefeito de Triunfo declarou que vai reverter condenação de mais de meio milhão de reais</a></h2>
+                        <p class="except show-for-large">I'm going to improvise. Listen, there's something you should...</p>
                     </div>
                 </div>
+            </div>
     
-                <div class="cell small-8">
-                    <div class="ads-container width-100 text-center show-for-large">
-                        <img src="assets/img/ads700.png" alt="">
-                    </div>
-    
-                    <div class="grid-x grid-padding-x hide-for-large">
-                        <div class="cell small-6 text-left">
-                            <div class="mobile-link display-inline-block">
-                                <a href="#" class="hollow tiny button margin-bottom-0">
-                                    <i class="fas fa-play-circle"></i> Ouvir
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="cell small-6 text-right">
-                            <div class="mobile-link display-inline-block">
-                                <a href="#" class="hollow tiny button margin-bottom-0">
-                                    <i class="fas fa-play-circle"></i> Ouvir
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="cell small-2 text-right">
-                    <div class="logo-container display-inline-block">
-                        <a href="#" class="logo logo-am" title="Difusora Rádio Cajazeiras">
-                            <img src="assets/img/logo-am.jpg" alt="logo difusora" width="110">
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="cell small-12 hide-for-large margin-top-1">
-                    <div class="ads-container width-100 text-center">
-                        <img src="assets/img/ads700.png" alt="">
-                    </div>
-                </div>
-    
-                <div class="cell small-12 main-menu">
-                    <div class="grid-x grid-padding-x show-for-large">
-                        <div class="cell shrink">
-                            <a href="#" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Patamuté FM 94.5</a>
-                        </div>
-                
-                        <div class="cell auto padding-0">
-                            <ul class="menu align-center">
-                                <li><a href="#">Cidades</a></li>
-                                <li><a href="#">Cajazeiras</a></li>
-                                <li><a href="#">Paraíba</a></li>
-                                <li><a href="#">Brasil</a></li>
-                                <li><a href="#">Mundo</a></li>
-                                <li><a href="#">Entretenimento</a></li>
-                            </ul>
-                        </div>
-                
-                        <div class="cell shrink text-right">
-                            <a href="#" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Difusora Rádio</a>
-                        </div>
-                    </div>
-                </div>        </div>
+            <div class="width-100">
+                <span class="tag">São João 2018</span>
+                <h2 class="title-3">
+                    <a href="#">Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                </h2>
+            </div>
         </div>
-    </header>
-    <div class="grid-container main-container">
-      <div class="grid-x programacao-radios margin-bottom-1">
-          <div class="cell small-12 section-header">
-              <div class="grid-x">
-                  <div class="cell small-12 section-container">
-                      <div class="grid-x">
-                          <div class="cell auto text-left">
-                              <h2 class="margin-0"><i class="fas fa-calendar-alt"></i> Programação</h2>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-8">
-              <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-                  <li class="tabs-title is-active"><a href="#patamute"><i class="fas fa-broadcast-tower"></i> <strong>Patamuté FM 94.5</strong></a></li>
-                  <li class="tabs-title"><a href="#difusora"><i class="fas fa-broadcast-tower"></i> <strong>Difusora Rádio</strong></a></li>
-              </ul>
-      
-              <div class="tabs-content" data-tabs-content="collapsing-tabs">
-                  <div class="tabs-panel is-active" id="patamute">
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="tabs-panel" id="difusora">
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="media-object padding-bottom-1">
-                          <div class="media-object-section">
-                              <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
-                          </div>
-                          <div class="media-object-section programacao-block">
-                              <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
-                              <p>
-                                  <small>
-                                      <i class="far fa-clock"></i> 5:00 |
-                                      <i class="far fa-calendar-alt"></i> SEG À SEX
-                                  </small>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
-              <span class="display-inline-block width-100 margin-bottom-1">
-                  <small class="text-uppercase">Publicidade</small>
-              </span>
-      
-              <figure>
-                  <a href="#">
-                      <img src="https://78027555ff7a6b146c81-f0a5e719f27438cb91b2682ec1265bfb.ssl.cf2.rackcdn.com/7f8fb562e385f23506cf585c1db890a3.jpeg"
-                           alt="ads">
-                  </a>
-              </figure>
-          </div>
-      </div><div class="grid-x grid-padding-x">
-          <div class="cell small-12 section-header">
-              <div class="grid-x">
-                  <div class="cell small-12 section-container">
-                      <div class="grid-x">
-                          <div class="cell auto text-left">
-                              <h2 class="margin-0"><i class="fas fa-star"></i> Destaques</h2>
-                          </div>
-                          <div class="cell auto text-right">
-                              <span><a href="#">Todos</a></span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-6">
-              <div class="orbit width-100 main-page-slider" role="region" aria-label="Destaques do site" data-orbit>
-                  <div class="orbit-wrapper">
-                      <div class="orbit-controls show-for-medium">
-                          <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
-                          <button class="orbit-next"><span class="show-for-sr">Próximo</span>&#9654;&#xFE0E;</button>
-                      </div>
-                      <ul class="orbit-container">
-                          <li class="is-active orbit-slide height-100 width-100 overflow-hidden">
-                              <a href="#" class="slider-tag display-block position-absolute position-left">Resultado</a>
-              
-                              <a class="orbit-figure display-block">
-                                  <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
-                                       data-bgcover="https://img.jovempan.uol.com.br/uploads/2018/06/636653879051184077w-796x576.jpg"></div>
-                                  <span class="display-block orbit-caption">Sai resultado da enquete para decidir se o Dia de São Pedro é feriado em Cajazeiras; Saiba como foi!</span>
-                              </a>
-                          </li>
-                          <li class="orbit-slide height-100 width-100 overflow-hidden">
-                              <a href="#" class="slider-tag display-block position-absolute position-left">Condenação</a>
-              
-                              <a class="orbit-figure display-block">
-                                  <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
-                                       data-bgcover="http://www.abrapbrasil.com.br/images/noticias/camara-aprova-projeto-que-cria-a-politica-nacional-de-biocombustiveis-5a1e8d0f90290.jpg"></div>
-                                  <span class="display-block orbit-caption">Condenação Federal de ex-prefeito, visitas de Dra Paula e dúvida dos eleitores são assuntos da semana</span>
-                              </a>
-                          </li>
-                          <li class="orbit-slide height-100 width-100 overflow-hidden">
-                              <a href="#" class="slider-tag display-block position-absolute position-left">Abre mão</a>
-              
-                              <a class="orbit-figure display-block">
-                                  <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
-                                       data-bgcover="http://vanhoni.com.br/wp-content/uploads/2009/10/angelovanhoni_foto_gilsoncamargo_09_10_09_campolargo_pr51.jpg"></div>
-                                  <span class="display-block orbit-caption">Mariano, da dupla com Munhoz, abre mão do luxo e anda de ônibus</span>
-                              </a>
-                          </li>
-                          <li class="orbit-slide height-100 width-100 overflow-hidden">
-                              <a href="#" class="slider-tag display-block position-absolute position-left">Boa notícia</a>
-              
-                              <a class="orbit-figure display-block">
-                                  <div class="bg-slide width-100 height-100 position-absolute position-top position-left"
-                                       data-bgcover="http://s2.glbimg.com/XewABaasipIdKIQwKnkQyaqdV-uPtvPMv4_Yn9fopGpIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/09/10/artur_620.jpg"></div>
-                                  <span class="display-block orbit-caption">Bruna Marquezine é tietada por brasileiros nas ruas da Rússia</span>
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-                  <!--<nav class="orbit-bullets">-->
-                      <!--<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>-->
-                      <!--<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>-->
-                      <!--<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>-->
-                      <!--<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>-->
-                  <!--</nav>-->
-              </div>    </div>
-      
-          <div class="cell small-12 medium-6 featured-news">
-              <div class="width-100">
-                  <span class="tag">Trágico</span>
-                  <h2 class="title-1">
-                      <a href="#">NA REGIÃO DE CAJAZEIRAS: Criança que lutava contra doença rara morre aos 5 anos; Mãe diz como foi últimos momentos da filha</a>
-                  </h2>
-                  <p class="except divider show-for-large">
-                      Jamily era que era natural da cidade de Uiraúna, se alimentava por sonda e precisa de um leite que custava em torno de R$ 1,6 mil cada lata
-                  </p>
-              </div>
-      
-              <div class="width-100">
-                  <div class="media-object">
-                      <div class="media-object-section">
-                          <a href="#" class="thumb-1 display-block" data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2017/03/damisio_triunfo_-2.jpg"></a>
-                      </div>
-                      <div class="media-object-section">
-                          <span class="tag">Condenação</span>
-                          <h2 class="title-2"><a href="#">Ex-prefeito de Triunfo declarou que vai reverter condenação de mais de meio milhão de reais</a></h2>
-                          <p class="except show-for-large">I'm going to improvise. Listen, there's something you should...</p>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="width-100">
-                  <span class="tag">São João 2018</span>
-                  <h2 class="title-3">
-                      <a href="#">Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                  </h2>
-              </div>
-          </div>
-      </div><div class="grid-x margin-top-1 three-news-section">
-          <div class="cell small-12 medium-8">
-              <div class="grid-x section-header margin-bottom-1">
-                  <div class="cell small-12 section-container">
-                      <div class="grid-x">
-                          <div class="cell auto text-left">
-                              <h2 class="margin-0">Cajazeiras</h2>
-                          </div>
-                          <div class="cell auto text-right">
-                              <span><a href="#">Todos</a></span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="grid-x grid-padding-x">
-                  <div class="cell small-12 medium-4 large-auto card-blog padding-left-0">
-                      <a class="width-100 position-relative display-block"
-                              data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/03/ricardo-coutinho.jpg">
-                          <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
-                      </a>
-                      <h2 class="title-3 margin-top-1">
-                          <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
-                      </h2>
-                  </div>
-      
-                  <div class="cell small-12 medium-4 large-auto card-blog">
-                      <a class="width-100 position-relative display-block"
-                         data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/05/concurso-1.jpg">
-                          <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
-                      </a>
-                      <h2 class="title-3 margin-top-1">
-                          <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
-                      </h2>
-                  </div>
-      
-                  <div class="cell small-12 medium-4 large-auto card-blog padding-right-0">
-                      <a class="width-100 position-relative display-block"
-                         data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/06/sojoao-sousa-2dia-9.jpg">
-                          <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
-                      </a>
-                      <h2 class="title-3 margin-top-1">
-                          <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                      </h2>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
-              <span class="display-inline-block width-100 margin-bottom-1">
-                  <small class="text-uppercase">Publicidade</small>
-              </span>
-      
-              <figure>
-                  <a href="#">
-                      <img src="https://31b0694301ee5928c689-a70ebfa87b65034cb296a678418ad0bc.ssl.cf2.rackcdn.com/0b3f3c261300464bafef15ebfc39ae50.jpeg"
-                           alt="ads">
-                  </a>
-              </figure>
-          </div>
-      </div><div class="grid-x margin-top-1 three-news-vertical-section">
-          <div class="cell small-12 medium-8">
-              <div class="grid-x section-header margin-bottom-1">
-                  <div class="cell small-12 section-container">
-                      <div class="grid-x">
-                          <div class="cell auto text-left">
-                              <h2 class="margin-0">Paraíba</h2>
-                          </div>
-                          <div class="cell auto text-right">
-                              <span><a href="#">Todos</a></span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="grid-x">
-                  <div class="cell small-12">
-                      <div class="media-object">
-                          <div class="media-object-section">
-                              <a href="#" class="thumb-1 display-block" data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/06/torra_look_sousa_pb-25.jpg"></a>
-                          </div>
-                          <div class="media-object-section">
-                              <span class="tag">Foi inaugurado</span>
-                              <h2 class="title-1"><a href="#">Loja de modas “Torra Look” é inaugurada na cidade de Sousa; todos os produtos com preço único</a></h2>
-                              <p class="except show-for-large">Jamily era que era natural da cidade de Uiraúna, se alimentava por sonda e precisa de um leite que custava em torno de R$ 1,6 mil cada lata...</p>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="cell small-12">
-                      <span class="tag">São João 2018</span>
-                      <h2 class="title-2">
-                          <a href="#">Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                      </h2>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
-              <span class="display-inline-block width-100 margin-bottom-1">
-                  <small class="text-uppercase">Publicidade</small>
-              </span>
-      
-              <figure>
-                  <a href="#">
-                      <img src="https://78027555ff7a6b146c81-f0a5e719f27438cb91b2682ec1265bfb.ssl.cf2.rackcdn.com/7f8fb562e385f23506cf585c1db890a3.jpeg"
-                           alt="ads">
-                  </a>
-              </figure>
-          </div>
-      </div><div class="grid-x programacao-radios footer-news margin-bottom-1 margin-top-1">
-          <div class="cell small-12 medium-8">
-              <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-                  <li class="tabs-title is-active"><a href="#news-1"><i class="fas fa-file-alt"></i> <strong>Esportes</strong></a></li>
-                  <li class="tabs-title"><a href="#news2"><i class="fas fa-file-alt"></i> <strong>Entretenimento</strong></a></li>
-                  <li class="tabs-title"><a href="#news3"><i class="fas fa-file-alt"></i> <strong>Mundo</strong></a></li>
-              </ul>
-      
-              <div class="tabs-content" data-tabs-content="collapsing-tabs">
-                  <div class="tabs-panel is-active" id="news-1">
-                      <div class="grid-x three-news-section">
-                          <div class="cell small-12">
-                              <div class="grid-x grid-padding-x">
-                                  <div class="cell small-12 medium-4 card-blog padding-left-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog padding-right-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                                      </h2>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>            </div>
-      
-                  <div class="tabs-panel" id="news2">
-                      <div class="grid-x three-news-section">
-                          <div class="cell small-12">
-                              <div class="grid-x grid-padding-x">
-                                  <div class="cell small-12 medium-4 card-blog padding-left-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog padding-right-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                                      </h2>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>            </div>
-      
-                  <div class="tabs-panel" id="news3">
-                      <div class="grid-x three-news-section">
-                          <div class="cell small-12">
-                              <div class="grid-x grid-padding-x">
-                                  <div class="cell small-12 medium-4 card-blog padding-left-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
-                                      </h2>
-                                  </div>
-                      
-                                  <div class="cell small-12 medium-4 card-blog padding-right-0">
-                                      <a class="width-100 position-relative display-block"
-                                         data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
-                                          <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
-                                      </a>
-                                      <h2 class="title-3 margin-top-1">
-                                          <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
-                                      </h2>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>            </div>
-              </div>
-          </div>
-      
-          <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
-              <span class="display-inline-block width-100 margin-bottom-1">
-                  <small class="text-uppercase">Publicidade</small>
-              </span>
-      
-              <figure>
-                  <a href="#">
-                      <img src="https://www.mobivisits.com/wp-content/uploads/2017/01/IAB-ads-300X250.png"
-                           alt="ads">
-                  </a>
-              </figure>
-          </div>
-      </div>    </div>
-
-    <footer id="footer" class="width-100 margin-top-2">
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell small-12 text-center">
-                    <h4><strong>Patamuté FM 94.5 - Rádion Difusora Cajazeiras</strong></h4>
+    </div><div class="grid-x margin-top-1 three-news-section">
+        <div class="cell small-12 medium-8">
+            <div class="grid-x section-header margin-bottom-1">
+                <div class="cell small-12 section-container">
+                    <div class="grid-x">
+                        <div class="cell auto text-left">
+                            <h2 class="margin-0">Cajazeiras</h2>
+                        </div>
+                        <div class="cell auto text-right">
+                            <span><a href="#">Todos</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-4 large-auto card-blog padding-left-0">
+                    <a class="width-100 position-relative display-block"
+                            data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/03/ricardo-coutinho.jpg">
+                        <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
+                    </a>
+                    <h2 class="title-3 margin-top-1">
+                        <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
+                    </h2>
                 </div>
     
-                <div class="cell small-12 text-center show-for-medium">
-                    <ul class="menu align-center">
-                        <li><a href="#">Cidades</a></li>
-                        <li><a href="#">Cajazeiras</a></li>
-                        <li><a href="#">Paraíba</a></li>
-                        <li><a href="#">Brasil</a></li>
-                        <li><a href="#">Mundo</a></li>
-                        <li><a href="#">Entretenimento</a></li>
-                    </ul>
+                <div class="cell small-12 medium-4 large-auto card-blog">
+                    <a class="width-100 position-relative display-block"
+                       data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/05/concurso-1.jpg">
+                        <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
+                    </a>
+                    <h2 class="title-3 margin-top-1">
+                        <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
+                    </h2>
+                </div>
+    
+                <div class="cell small-12 medium-4 large-auto card-blog padding-right-0">
+                    <a class="width-100 position-relative display-block"
+                       data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/06/sojoao-sousa-2dia-9.jpg">
+                        <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
+                    </a>
+                    <h2 class="title-3 margin-top-1">
+                        <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                    </h2>
                 </div>
             </div>
         </div>
-    </footer>    <script src="assets/js/app.js"></script>
-  </body>
+    
+        <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
+            <span class="display-inline-block width-100 margin-bottom-1">
+                <small class="text-uppercase">Publicidade</small>
+            </span>
+    
+            <figure>
+                <a href="#">
+                    <img src="https://31b0694301ee5928c689-a70ebfa87b65034cb296a678418ad0bc.ssl.cf2.rackcdn.com/0b3f3c261300464bafef15ebfc39ae50.jpeg"
+                         alt="ads">
+                </a>
+            </figure>
+        </div>
+    </div><div class="grid-x margin-top-1 three-news-vertical-section">
+        <div class="cell small-12 medium-8">
+            <div class="grid-x section-header margin-bottom-1">
+                <div class="cell small-12 section-container">
+                    <div class="grid-x">
+                        <div class="cell auto text-left">
+                            <h2 class="margin-0">Paraíba</h2>
+                        </div>
+                        <div class="cell auto text-right">
+                            <span><a href="#">Todos</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-x">
+                <div class="cell small-12">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <a href="#" class="thumb-1 display-block" data-bgcover="http://www.diariodosertao.com.br/wp-content/uploads/2018/06/torra_look_sousa_pb-25.jpg"></a>
+                        </div>
+                        <div class="media-object-section">
+                            <span class="tag">Foi inaugurado</span>
+                            <h2 class="title-1"><a href="#">Loja de modas “Torra Look” é inaugurada na cidade de Sousa; todos os produtos com preço único</a></h2>
+                            <p class="except show-for-large">Jamily era que era natural da cidade de Uiraúna, se alimentava por sonda e precisa de um leite que custava em torno de R$ 1,6 mil cada lata...</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cell small-12">
+                    <span class="tag">São João 2018</span>
+                    <h2 class="title-2">
+                        <a href="#">Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
+            <span class="display-inline-block width-100 margin-bottom-1">
+                <small class="text-uppercase">Publicidade</small>
+            </span>
+    
+            <figure>
+                <a href="#">
+                    <img src="https://78027555ff7a6b146c81-f0a5e719f27438cb91b2682ec1265bfb.ssl.cf2.rackcdn.com/7f8fb562e385f23506cf585c1db890a3.jpeg"
+                         alt="ads">
+                </a>
+            </figure>
+        </div>
+    </div><div class="grid-x programacao-radios footer-news margin-bottom-1 margin-top-1">
+        <div class="cell small-12 medium-8">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                <li class="tabs-title is-active"><a href="#news-1"><i class="fas fa-file-alt"></i> <strong>Esportes</strong></a></li>
+                <li class="tabs-title"><a href="#news2"><i class="fas fa-file-alt"></i> <strong>Entretenimento</strong></a></li>
+                <li class="tabs-title"><a href="#news3"><i class="fas fa-file-alt"></i> <strong>Mundo</strong></a></li>
+            </ul>
+    
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                <div class="tabs-panel is-active" id="news-1">
+                    <div class="grid-x three-news-section">
+                        <div class="cell small-12">
+                            <div class="grid-x grid-padding-x">
+                                <div class="cell small-12 medium-4 card-blog padding-left-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog padding-right-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            </div>
+    
+                <div class="tabs-panel" id="news2">
+                    <div class="grid-x three-news-section">
+                        <div class="cell small-12">
+                            <div class="grid-x grid-padding-x">
+                                <div class="cell small-12 medium-4 card-blog padding-left-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog padding-right-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            </div>
+    
+                <div class="tabs-panel" id="news3">
+                    <div class="grid-x three-news-section">
+                        <div class="cell small-12">
+                            <div class="grid-x grid-padding-x">
+                                <div class="cell small-12 medium-4 card-blog padding-left-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="https://www.araujopolicastro.com.br/wp-content/uploads/2014/01/esporte-e-entretenimento-640x453.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Em visita</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">Ricardo Coutinho nega desistência de João Azevedo, diz que Lucélio não será candidato e afirma que Maranhão não </a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.alsharq.net.sa/wp-content/uploads/2014/03/642019-513x340.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">Oportunidade</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">EMPREGO: Ministério Público Estadual da Paraíba abre vagas em concurso com salário de mais de R$ 24 mil</a>
+                                    </h2>
+                                </div>
+                    
+                                <div class="cell small-12 medium-4 card-blog padding-right-0">
+                                    <a class="width-100 position-relative display-block"
+                                       data-bgcover="http://www.deolhonacidade.net/fotos/p/48250-3.jpg">
+                                        <span class="position-absolute position-bottom position-left tag-card">São João 2018</span>
+                                    </a>
+                                    <h2 class="title-3 margin-top-1">
+                                        <a href="#">VÍDEO: cantor Gusttavo Lima agita e leva recorde de público na 2ª noite do São João de Sousa</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            </div>
+            </div>
+        </div>
+    
+        <div class="cell small-12 medium-4 text-center padding-left-1 ads-container">
+            <span class="display-inline-block width-100 margin-bottom-1">
+                <small class="text-uppercase">Publicidade</small>
+            </span>
+    
+            <figure>
+                <a href="#">
+                    <img src="https://www.mobivisits.com/wp-content/uploads/2017/01/IAB-ads-300X250.png"
+                         alt="ads">
+                </a>
+            </figure>
+        </div>
+    </div></div>
+
+<footer id="footer" class="width-100 margin-top-2">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell small-12 text-center">
+                <h4><strong>Patamuté FM 94.5 - Rádion Difusora Cajazeiras</strong></h4>
+            </div>
+
+            <div class="cell small-12 text-center show-for-medium">
+                <ul class="menu align-center">
+                    <li><a href="#">Cidades</a></li>
+                    <li><a href="#">Cajazeiras</a></li>
+                    <li><a href="#">Paraíba</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mundo</a></li>
+                    <li><a href="#">Entretenimento</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer><div class="menu-offcanvas position-fixed-top height-100 hide-for-large padding-top-3 position-relative">
+    <button class="close-button position-absolute toggle-offcanvas" aria-label="Close alert" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <ul class="dropdown menu vertical" data-dropdown-menu>
+        <li>
+            <a href="#">Programação</a>
+            <ul class="menu theme">
+                <li><a href="#">Patamuté FM 94.5</a></li>
+                <li><a href="#">Difusora Rádio Cajazeiras</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Notícias</a>
+            <ul class="menu theme">
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Cajazeiras</a></li>
+                <li><a href="#">Paraíba</a></li>
+                <li><a href="#">Brasil</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Entretenimento</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Contato</a>
+        </li>
+    </ul>
+</div>
+
+<a href="#" class="close-menu-offcanvas toggle-offcanvas position-fixed-top height-100 width-100 display-block" data-close-offcanvas></a><script src="assets/js/app.js"></script>
+</body>
 </html>
