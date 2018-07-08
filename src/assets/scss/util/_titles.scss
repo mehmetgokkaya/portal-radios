@@ -48,6 +48,15 @@
 .single-title {
   font-weight: 800;
 
+  &.category {
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  i {
+    opacity: .3;
+  }
+
   @include breakpoint(medium) {
     line-height: 1.2;
     font-size: rem-calc(32);

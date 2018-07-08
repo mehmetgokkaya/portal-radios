@@ -11,3 +11,12 @@
   font-size: rem-calc(16);
   border-bottom: 1px solid $light-gray;
 }
+
+// category
+
+.list-news-item {
+  border-bottom: 1px dashed $light-gray;
+  &:last-child {
+    border: none;
+  }
+}
