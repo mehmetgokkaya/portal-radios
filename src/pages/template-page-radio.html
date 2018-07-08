@@ -2,9 +2,27 @@
     <div class="cell small-12 medium-8">
 
         <article class="width-100 single-content margin-top-1 margin-bottom-2">
-            <div class="player-radio width-100">
-
+            <div class="player-radio width-100 padding-1">
+                <h5 class="display-inline-block width-100"><i class="fas fa-play"></i> Rádio Patamuté FM 94.5 - Ao vivo</h5>
+                <div class="width-100 margin-top-1 text-center">
+                    <audio
+                            src="http://72.29.81.124:8118/;stream.mp3"
+                            id="radio-player"
+                            autoplay
+                            controls
+                    >
+                        <p>Seu navegador não possui suporte para essa funcionalidade. Atualize-o!</p>
+                    </audio>
+                </div>
             </div>
+
+            <figure class="ads-container width-100 margin-top-2">
+                <span class="display-inline-block width-100 margin-bottom-1">
+                    <small class="text-uppercase">Publicidade</small>
+                </span>
+                <img src="http://empreendedorismonaweb.com/wp-content/uploads/2016/05/700x90-4-1024x132.jpg"
+                     alt="ads">
+            </figure>
         </article>
 
         {{> single.comentarios}}

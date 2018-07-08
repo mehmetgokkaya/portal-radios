@@ -1,0 +1,19 @@
+.player-radio {
+  border-radius: 10px;
+  background: rgb(125,126,125);
+  background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+  background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+
+  h5 {
+    font-size: rem-calc(12);
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 6px;
+    border-top: 1px solid rgba($light-gray, .5);
+    padding: rem-calc(5 20);
+    border-bottom: 1px solid rgba($dark-gray, .5);
+    background: rgba(125,126,125, .3);
+  }
+}
