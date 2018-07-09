@@ -1,0 +1,422 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patamuté FM/Difusora AM</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0&appId=311641142285753&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header class="header width-100">
+    <div class="position-fixed-top">
+        <div class="grid-x grid-padding-x top-bar">
+            <div class="cell small-6 text-left show-for-large">
+                <ul class="dropdown menu top-menu" data-dropdown-menu>
+                    <li>
+                        <a href="#">Programação</a>
+                        <ul class="menu theme">
+                            <li><a href="#">Patamuté FM 94.5</a></li>
+                            <li><a href="#">Difusora Rádio Cajazeiras</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Notícias</a>
+                        <ul class="menu theme">
+                            <li><a href="#">Cidades</a></li>
+                            <li><a href="#">Cajazeiras</a></li>
+                            <li><a href="#">Paraíba</a></li>
+                            <li><a href="#">Brasil</a></li>
+                            <li><a href="#">Mundo</a></li>
+                            <li><a href="#">Entretenimento</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="page.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="cell small-6 text-right show-for-large">
+                <div class="input-group margin-bottom-0 display-inline-block search-container">
+                    <input class="input-group-field float-left" placeholder="Pesquisar no site..." type="text">
+                    <div class="input-group-button float-left">
+                        <button class="button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="cell small-12 hide-for-large">
+                <a href="#" class="open-offcanvas toggle-offcanvas"></a>
+            </div>
+        </div>
+        <div class="grid-x top-bar-bottom">
+            <div class="cell small-4 bg-danger"></div>
+            <div class="cell small-2 bg-warning"></div>
+            <div class="cell small-3 bg-orange"></div>
+            <div class="cell small-2 bg-success"></div>
+            <div class="cell small-1 bg-primary"></div>
+        </div>    </div>
+
+    <div class="grid-container">
+        <div class="site-top grid-x grid-padding-x">
+            <div class="cell small-2">
+                <div class="logo-container display-inline-block">
+                    <a href="#" class="logo" title="Patamuté FM 94.5">
+                        <img src="assets/img/logo-fm.png" alt="logo patmuté fm">
+                    </a>
+                </div>
+            </div>
+
+            <div class="cell small-8">
+                <div class="ads-container width-100 text-center show-for-large">
+                    <img src="assets/img/ads700.png" alt="">
+                </div>
+
+                <div class="grid-x grid-padding-x hide-for-large">
+                    <div class="cell small-6 text-left">
+                        <div class="mobile-link display-inline-block">
+                            <a href="#" class="hollow tiny button margin-bottom-0">
+                                <i class="fas fa-play-circle"></i> Ouvir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cell small-6 text-right">
+                        <div class="mobile-link display-inline-block">
+                            <a href="#" class="hollow tiny button margin-bottom-0">
+                                <i class="fas fa-play-circle"></i> Ouvir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cell small-2 text-right">
+                <div class="logo-container display-inline-block">
+                    <a href="#" class="logo logo-am" title="Difusora Rádio Cajazeiras">
+                        <img src="assets/img/logo-am.jpg" alt="logo difusora" width="110">
+                    </a>
+                </div>
+            </div>
+
+            <div class="cell small-12 hide-for-large margin-top-1">
+                <div class="ads-container width-100 text-center">
+                    <img src="assets/img/ads700.png" alt="">
+                </div>
+            </div>
+
+            <div class="cell small-12 main-menu">
+                <div class="grid-x grid-padding-x show-for-large">
+                    <div class="cell shrink">
+                        <a href="template-page-radio.html" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Patamuté FM 94.5</a>
+                    </div>
+            
+                    <div class="cell auto padding-0">
+                        <ul class="menu align-center">
+                            <li><a href="category.html">Cidades</a></li>
+                            <li><a href="category.html">Cajazeiras</a></li>
+                            <li><a href="category.html">Paraíba</a></li>
+                            <li><a href="category.html">Brasil</a></li>
+                            <li><a href="category.html">Mundo</a></li>
+                            <li><a href="category.html">Entretenimento</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="cell shrink text-right">
+                        <a href="#" class="hollow small h-invert button margin-bottom-0 text-uppercase"><i class="fas fa-play-circle"></i> Ouça Difusora Rádio</a>
+                    </div>
+                </div>
+            </div>        </div>
+    </div>
+</header>
+<div class="grid-container main-container">
+    <div class="grid-x grid-padding-x single-page">
+        <div class="cell small-12 medium-8">
+            <h1 class="single-title category">
+                Página interna
+            </h1>
+    
+            <span class="separator"></span>
+    
+            <article class="width-100 single-content margin-top-1 margin-bottom-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores earum porro quas reiciendis? Nam quaerat quo tempora voluptatibus! Aliquam asperiores deserunt doloremque ex expedita possimus quas quod quos repudiandae, soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto atque cum deleniti deserunt eius error facilis fuga fugit itaque labore minima molestiae, nisi officiis optio recusandae totam vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus est eveniet, fugit labore porro voluptates? Alias aperiam cum error laboriosam quisquam saepe totam voluptatum. Ad aliquid enim est quis?</p>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores earum porro quas reiciendis? Nam quaerat quo tempora voluptatibus! Aliquam asperiores deserunt doloremque ex expedita possimus quas quod quos repudiandae, soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto atque cum deleniti deserunt eius error facilis fuga fugit itaque labore minima molestiae, nisi officiis optio recusandae totam vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus est eveniet, fugit labore porro voluptates? Alias aperiam cum error laboriosam quisquam saepe totam voluptatum. Ad aliquid enim est quis?</p>
+            </article>
+        </div>
+    
+        <aside class="cell small-12 medium-4 sidebar">
+            <div class="grid-x programacao-radios">
+                <div class="cell small-12 margin-bottom-1">
+                    <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                        <li class="tabs-title is-active"><a href="#patamute"><i class="far fa-calendar"></i> <strong>Patamuté FM 94.5</strong></a></li>
+                        <li class="tabs-title"><a href="#difusora"><i class="far fa-calendar"></i> <strong>Difusora Rádio</strong></a></li>
+                    </ul>
+        
+                    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+                        <div class="tabs-panel is-active" id="patamute">
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Patamuté</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="tabs-panel" id="difusora">
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media-object padding-bottom-1">
+                                <div class="media-object-section">
+                                    <div class="thumb-locutor" data-bgcover="http://eduoliveira.com.br/blog/wp-content/uploads/2016/02/locutor-1.jpg"></div>
+                                </div>
+                                <div class="media-object-section programacao-block">
+                                    <h4 class="margin-bottom-0 line-height-1">Bom dia Difusora</h4>
+                                    <p>
+                                        <small>
+                                            <i class="far fa-clock"></i> 5:00 |
+                                            <i class="far fa-calendar-alt"></i> SEG À SEX
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cell small-12 text-center ads-container margin-bottom-1">
+                <span class="display-inline-block width-100 margin-bottom-1">
+                    <small class="text-uppercase">Publicidade</small>
+                </span>
+        
+                    <figure>
+                        <a href="#">
+                            <img src="https://78027555ff7a6b146c81-f0a5e719f27438cb91b2682ec1265bfb.ssl.cf2.rackcdn.com/7f8fb562e385f23506cf585c1db890a3.jpeg"
+                                 alt="ads">
+                        </a>
+                    </figure>
+                </div>
+        
+                <div class="cell small-12 margin-bottom-1">
+                    <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs-live">
+                        <li class="tabs-title is-active"><a href="#patamute-live"><i class="fas fa-tv"></i> <strong>Patamuté FM 94.5</strong></a></li>
+                        <li class="tabs-title"><a href="#difusora-live"><i class="fas fa-tv"></i> <strong>Difusora Rádio</strong></a></li>
+                    </ul>
+        
+                    <div class="tabs-content" data-tabs-content="collapsing-tabs-live">
+                        <div class="tabs-panel is-active" id="patamute-live">
+                            <div class="responsive-embed widescreen">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+        
+                        <div class="tabs-panel" id="difusora-live">
+                            <div class="responsive-embed widescreen">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cell small-12 text-center ads-container margin-bottom-1">
+                <span class="display-inline-block width-100 margin-bottom-1">
+                    <small class="text-uppercase">Publicidade</small>
+                </span>
+        
+                    <figure>
+                        <a href="#">
+                            <img src="https://31b0694301ee5928c689-a70ebfa87b65034cb296a678418ad0bc.ssl.cf2.rackcdn.com/0b3f3c261300464bafef15ebfc39ae50.jpeg"
+                                 alt="ads">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </aside></div>
+</div>
+
+<footer id="footer" class="width-100 margin-top-2">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell small-12 text-center">
+                <h4><strong>Patamuté FM 94.5 - Rádion Difusora Cajazeiras</strong></h4>
+            </div>
+
+            <div class="cell small-12 text-center show-for-medium">
+                <ul class="menu align-center">
+                    <li><a href="#">Cidades</a></li>
+                    <li><a href="#">Cajazeiras</a></li>
+                    <li><a href="#">Paraíba</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mundo</a></li>
+                    <li><a href="#">Entretenimento</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer><div class="menu-offcanvas position-fixed-top height-100 hide-for-large padding-top-3 position-relative">
+    <button class="close-button position-absolute toggle-offcanvas" aria-label="Close alert" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
+    <ul class="dropdown menu vertical" data-dropdown-menu>
+        <li>
+            <a href="#">Programação</a>
+            <ul class="menu theme">
+                <li><a href="#">Patamuté FM 94.5</a></li>
+                <li><a href="#">Difusora Rádio Cajazeiras</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Notícias</a>
+            <ul class="menu theme">
+                <li><a href="#">Cidades</a></li>
+                <li><a href="#">Cajazeiras</a></li>
+                <li><a href="#">Paraíba</a></li>
+                <li><a href="#">Brasil</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Entretenimento</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Contato</a>
+        </li>
+    </ul>
+</div>
+
+<a href="#" class="close-menu-offcanvas toggle-offcanvas position-fixed-top height-100 width-100 display-block" data-close-offcanvas></a><script src="assets/js/app.js"></script>
+</body>
+</html>
