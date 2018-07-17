@@ -39,3 +39,28 @@
     }
   }
 }
+.events-container {
+  height: rem-calc(250);
+  overflow: hidden;
+
+  figcaption {
+    bottom: 0;
+    a {
+      background-color: rgba($black, .7);
+      color: $white;
+      padding: rem-calc(20);
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  @include breakpoint(medium) {
+    height: rem-calc(300);
+
+    h2 {
+      font-size: rem-calc(24);
+    }
+  }
+}
