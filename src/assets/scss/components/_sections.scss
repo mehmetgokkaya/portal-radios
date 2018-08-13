@@ -72,12 +72,18 @@
 
 .programacao-radios {
   .tabs-content {
-    height: rem-calc(237);
+    height: rem-calc(275);
     overflow-x: auto;
   }
 
   .media-object {
     border-bottom: 1px solid $light-gray;
+  }
+
+  @include breakpoint(medium) {
+    .tabs-content {
+      height: rem-calc(360);
+    }
   }
 }
 
